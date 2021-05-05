@@ -1,5 +1,5 @@
 # wzstats-lobby-ranking
-A script that enables lobby ranking (bronze, silver etc.) like at sbmmwarzone.com
+A script that enables lobby ranking at wzstats.gg(bronze, silver etc.) like at sbmmwarzone.com
 
 How to install:
 
