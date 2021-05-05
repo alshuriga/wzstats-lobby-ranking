@@ -2,10 +2,11 @@
 // @name         wzstats lobby ranking
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Enable lobby ranking (bronze, silver etc.) like at sbmmwarzone.com
+// @description  A script that enables lobby ranking (bronze, silver etc.) like at sbmmwarzone.com
 // @author       alshuriga
 // @match        *://wzstats.gg/*
 // @grant        none
+// @icon         https://github.com/alshuriga/wzstats-lobby-ranking/raw/main/icon.png
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://gist.githubusercontent.com/raw/2625891/waitForKeyElements.js
 // ==/UserScript==
@@ -58,7 +59,6 @@ $(document).ready(function() {
 
 
 function main() {
-    console.log("doc ready");
     var elements = $(".match-league");
     elements.each(function() {
         var kd = $('> .league-value', this).first().text()
@@ -72,7 +72,6 @@ function main() {
 
     var single = $(".lobby-stat.highlighted").first();
     var skd = $('.stat-number').first().text();
-    console.log('single page kd - ' + skd);
     var league = detect(skd)[0];
     var color = detect(skd)[1];
     $('.stat-title').first().text(league);
