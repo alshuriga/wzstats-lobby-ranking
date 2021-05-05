@@ -1,6 +1,8 @@
 # wzstats-lobby-ranking
 A script that enables lobby ranking at wzstats.gg(bronze, silver etc.) like at sbmmwarzone.com
 
+![alt text](https://github.com/alshuriga/wzstats-lobby-ranking/raw/main/example.jpg) 
+
 How to install:
 
 1. Install [Tampermonkey](https://tampermonkey.net/) to your browser
